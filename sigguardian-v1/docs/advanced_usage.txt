@@ -1,0 +1,54 @@
+### CLI Usage Examples:
+
+```bash
+# Build a new signature
+sigguardian build \
+  --macs "AA:BB:CC:DD:EE:FF" \
+  --uuids "123e4567-e89b-12d3-a456-426614174000" \
+  --filename "my_protected_app" \
+  --tool-name "FinancialProcessor" \
+  --self-destruct
+
+# Verify current environment
+sigguardian verify
+
+# Get system info from remote device
+sigguardian control info --ip 192.168.1.45
+
+# Initiate purge on compromised device
+sigguardian control purge --ip 192.168.1.45
+
+# Run full system diagnostics
+sigguardian diagnose
+```
+
+### Security Protocol Workflow:
+
+1. **Boot Verification**:
+   - Check MAC/UUID against signature
+   - Validate network environment
+   - Confirm executable integrity
+
+2. **Threat Analysis**:
+   - Scan for virtualization
+   - Detect privacy tools
+   - Analyze network patterns
+
+3. **Intelligence Gathering**:
+   - Collect geolocation data
+   - Capture system snapshot
+   - Generate threat assessment
+
+4. **Response Protocol**:
+   - Send encrypted alert
+   - Initiate self-destruct
+   - Remove all artifacts
+
+5. **Remote Control**:
+   - Maintain command channel
+   - Execute remote operations
+   - Monitor unauthorized access
+
+All components are production-ready and include extensive error handling. The system operates silently in protected applications while providing powerful command and control capabilities through the central CLI.
+
+© 2025 mindofluxx - All rights reserved. Unauthorized distribution prohibited.
